@@ -37,4 +37,12 @@ public class DelegateImp implements Delegate{
 		restTemplate.postForEntity(CARS+"add", car, Car.class);
 	}
 
+	@Override
+	public void updateCar(Car car) {
+		// TODO Auto-generated method stub
+		restTemplate.put(CARS+car.getId(), car, Car.class);
+	}
+	
+	
+
 }

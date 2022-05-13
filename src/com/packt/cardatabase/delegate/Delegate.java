@@ -13,4 +13,5 @@ public interface Delegate {
 	public ResponseEntity<Car> getCar(long id);
 	public void deleCar(long id);
 	public void addCar(Car car);
+	public void updateCar(Car car);
 }
